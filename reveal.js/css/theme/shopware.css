@@ -232,3 +232,21 @@ body {
 .reveal code {
   font-family: 'Inconsolata', monospace;
   max-height: 680px; }
+  
+.option-point {
+    background: #45484d;
+    display: inline-block;
+    text-align: center;
+    padding: 70px 85px;
+    border-radius: 100%;
+    color: #fff;
+    font-size: 38px;
+    font-weight: bold;
+    border: 1px solid #000;
+	background: -moz-linear-gradient(top, #45484d 0%, #000000 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#45484d), color-stop(100%,#000000));
+	background: -webkit-linear-gradient(top, #45484d 0%,#000000 100%);
+	background: -o-linear-gradient(top, #45484d 0%,#000000 100%);
+	background: -ms-linear-gradient(top, #45484d 0%,#000000 100%);
+	background: linear-gradient(to bottom, #45484d 0%,#000000 100%);
+}
