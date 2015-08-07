@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>Shopware 5 goes Responsive</title>
+		<title>Shopware 5 goes AJAX</title>
 		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
 		<meta name="author" content="Hakim El Hattab">
 		<meta name="apple-mobile-web-app-capable" content="yes" />
@@ -26,6 +26,116 @@
 			<div class="slides">
 				<section>
 					<h2 class="splash"><strong>AJAX</strong> Konfigurator</h2>
+				</section>
+				<section>
+					<h2 class="splash"><strong>Was</strong> hatten wir vor?</h2>
+				</section>
+				<section>
+					<ul>
+						<li>Das Neuladen der Seite bei bestimmten Modulen unterbinden.</li>
+						<li>Usability erhöhen</li>
+						<li>Geringere Ladezeiten</li>
+						<li>Kein (wenig) Latenz bei mobilen Geräten</li>
+					</ul>
+				</section>
+				<section>
+					<h2 class="splash"><strong>Optionen</strong></h2>
+				</section>
+				<section style="width: 120%; left: -60%">
+					<div style="float:left; width: 30%; padding: 0 1.5%; box-sizing: border-box">
+						<div class="option-point">
+							1
+						</div>
+					</div>
+					<div style="float:left; width: 70%; padding: 0 1.5%; box-sizing: border-box; text-align: left">
+						<h3 class="splash">
+							<strong>Kompletter</strong> Austausch
+						</h3>
+						<ul style="list-style: none; margin-left: 0">
+							<li>+ Plugins brechen nicht</li>
+							<li>+ Keine doppelte Pflege</li>
+							<li>+ Einfache Implementierung</li>
+							<li>+ Boardmittel reichen aus</li>
+							<li>&nbsp;</li>
+							<li>- Komplettes HTML rendern & laden</li>
+							<li>- Höhere Response-Zeit wegen Smarty Parser</li>
+							<li>- Geringe Flexibilität</li>
+						</ul>
+					</div>	
+				</section>
+				<section style="width: 120%; left: -60%">
+					<div style="float:left; width: 30%; padding: 0 1.5%; box-sizing: border-box">
+						<div class="option-point">
+							2
+						</div>
+					</div>
+					<div style="float:left; width: 70%; padding: 0 1.5%; box-sizing: border-box; text-align: left">
+						<h3 class="splash">
+							<strong>Austausch einzelner Elemente per JSON</strong>
+						</h3>
+						<ul style="list-style: none; margin-left: 0">
+							<li>+ Geringere Ladezeit</li>
+							<li>+ Höhere Flexibilität</li>
+							<li>&nbsp;</li>
+							<li>- DOM Manipulation</li>
+							<li>- Hoher Implementierungsaufwand wegen Elementvielfalt</li>
+
+
+						</ul>
+					</div>	
+				</section>
+				<section>
+					<h2 class="splash">Wieso nicht gleich einen Schritt <strong>weiterdenken</strong>,<br /><br /> wenn wir schon mit <strong>JSON</strong> arbeiten?</h2>
+				</section>
+				<section style="width: 120%; left: -60%">
+					<div style="float:left; width: 30%; padding: 0 1.5%; box-sizing: border-box">
+						<div class="option-point">
+							3
+						</div>
+					</div>
+					<div style="float:left; width: 70%; padding: 0 1.5%; box-sizing: border-box; text-align: left">
+						<h3 class="splash">
+							<strong>Live Data Binding</strong>
+						</h3>
+						<ul style="list-style: none; margin-left: 0">
+							<li>+ Höchste Flexibilität</li>
+							<li>+ Geringere Ladezeit</li>
+							<li>+ Relativ automatisierter Prozess</li>
+							<li>+ Client side templating</li>
+							<li>+ Kann an verschiedensten Stellen genutzt werden</li>
+							<li>&nbsp;</li>
+							<li>- Nicht mit Boardmitteln machbar (3rd party lib)</li>
+							<li>- Initialaufwand für Komponenten höher</li>
+							<li>- Clientseitig viel Logik & Templating</li>
+						</ul>
+					</div>	
+				</section>
+				<section>
+					<h2 class="splash"><strong>DEMO</strong></h2>
+				</section>
+				<section>
+					<h2 class="splash"><strong>Conclusion</strong></h2>
+					<ul>
+						<li>sArticle muss für clientseitiges Templating aufbereitet werden. Beispiel: Lieferbarkeit wird als ID ausgegeben.</li>
+						<li>Zu hoher Aufwand für eine einzelne Komponente. Pespektivisch:
+							<ul>
+								<li>Warenkorb</li>
+								<li>Suggestion Search</li>
+								<li>Artikelvergleich</li>
+								<li>Zukunfstmusik: Einkaufswelten & Filter</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section>
+					<h2 class="splash"><strong>Vorteile</strong></h2>
+					<ul>
+						<li>JSON lädt bis zur 30% schneller</li>
+						<li>Volle Flexibilität</li>
+						<li>Server as a Service</li>
+						<li>FE erfüllt seine eigentliche Aufgabe: Darstellung</li>
+						<li>Nutzung der Dienste über mobile Geräte werden viel fließender</li>
+					</ul>
 				</section>
 			</div>
 		</div>

@@ -233,16 +233,17 @@ body {
   font-family: 'Inconsolata', monospace;
   max-height: 680px; }
   
-.option-point {
+.reveal .option-point {
     background: #45484d;
     display: inline-block;
     text-align: center;
-    padding: 70px 85px;
+    padding: 70px 80px;
     border-radius: 100%;
     color: #fff;
-    font-size: 38px;
-    font-weight: bold;
+    font-size: 58px;
+    font-weight: 700;
     border: 1px solid #000;
+    font-family: "DINOffc-Bold";
 	background: -moz-linear-gradient(top, #45484d 0%, #000000 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#45484d), color-stop(100%,#000000));
 	background: -webkit-linear-gradient(top, #45484d 0%,#000000 100%);
