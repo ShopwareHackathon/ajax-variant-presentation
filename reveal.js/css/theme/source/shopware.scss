@@ -1,0 +1,154 @@
+/**
+ * Default theme for reveal.js.
+ *
+ * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+
+// Include theme-specific fonts
+@font-face {
+    font-family: 'DINOffc';
+    src: url('../../lib/font/DINOffc.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'DINOffc-Bold';
+    src: url('../../lib/font/DINOffc-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'DINOffc-Black';
+    src: url('../../lib/font/DINOffc-Black.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'DINOffc-Light';
+    src: url('../../lib/font/DINOffc-Light.ttf') format('truetype');
+}
+
+//@import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono);
+@import url(http://fonts.googleapis.com/css?family=Inconsolata);
+
+// Override theme settings (see ../template/settings.scss)
+$heading1TextShadow: 0 0 0 transparent;
+
+// Background generator
+@mixin bodyBackground() {
+	@include radial-gradient( #1764ff, #43a7ff );
+}
+
+
+/**
+ * Shopware specific styles
+ */
+$headingColor: #fff;
+$mainFont: 'DinOffc';
+$mainColor: #232323;
+$headingFont: 'DINOffc-Bold';
+$headingLetterSpacing: 0;
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+// Splash screen
+.sw-splash .reveal {
+
+    .progress {
+        display: none !important;
+    }
+
+     .state-background {
+         @include radial-gradient( #1764ff, #43a7ff );
+     }
+
+    h1 {
+        //margin-top: 25%;
+        font-size: 1.3em;
+        font-family: "DINOffc-Light";
+        text-shadow: 0 0 0 transparent;
+        color: #fff;
+        background: #000;
+        display: inline-block;
+        padding: .3em 1.1em;
+
+        strong {
+            font-family: "DINOffc-Bold";
+        }
+    }
+
+    h2 {
+        font-size: 1.1em;
+        font-family: "DINOffc-Light";
+        text-shadow: 0 0 0 transparent;
+        color: #fff;
+        background: #000;
+        display: inline-block;
+        padding: .3em 1.1em;
+
+        strong {
+            font-family: "DINOffc-Bold";
+        }
+    }
+}
+
+
+// Default theme style
+.reveal {
+     a:not(.image) {
+         color: #fff;
+     }
+
+    .progress {
+        background: #2674c2;
+
+        span {
+        	background: #3399ff;
+        	background: #eee;
+        }
+    }
+
+    h1.splash, h2.splash, h3.splash {
+    	font-size: 1.3em;
+        font-family: "DINOffc-Light";
+        text-shadow: 0 0 0 transparent;
+        color: #fff;
+        background: #000;
+        display: inline-block;
+        padding: .3em 0.8em;
+
+        strong {
+            font-family: "DINOffc-Bold";
+        }
+    }
+
+    h2.splash {
+		font-size: 1.2em;
+    }
+
+    h3.splash {
+
+    }
+
+    pre {
+    	//font-family: 'Ubuntu Mono', monospace;
+    	font-family: 'Inconsolata', monospace;
+    }
+
+    code {
+    	//font-family: 'Ubuntu Mono', monospace;
+    	font-family: 'Inconsolata', monospace;
+    	max-height: 680px;
+    }
+}
+
